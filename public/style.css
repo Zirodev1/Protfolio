@@ -1,7 +1,3 @@
-
-body {
-  line-height: 1;
-}
 *,
 *::after,
 *::before {
@@ -12,6 +8,11 @@ body {
 
 html {
   font-size: 10px;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: auto;
 }
 
 body {
@@ -351,16 +352,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(to right bottom, #9b14d3, #2e298c);
-  clip-path: polygon(
-    0% 0%,
-    0% 100%,
-    46% 100%,
-    46% 0%,
-    57% 0,
-    57% 100%,
-    100% 100%,
-    100% 0%
-  );
 }
 
 .contact-intro,
@@ -461,7 +452,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 480px)  {
   html,
   body {
     margin: 0;
@@ -522,16 +513,16 @@ footer {
   }
 
   .hero-detials {
-    width: 400px !important;
+    width: 90%;
     height: auto;
-    top: 10rem;
-    left: 1.5rem;
+    top: 3.5rem;
+    left: 1.8rem;
     font-size: 1.8rem;
     padding: 1rem;
   }
 
   .hero-detials h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
     padding-bottom: 1rem;
   }
 
@@ -540,15 +531,15 @@ footer {
   }
 
   .hero-img {
-    width: 200px;
-    height: 300px;
-    top: 48rem;
+    width: 180px;
+    height: 260px;
+    top: 40rem;
     left: 9rem;
   }
 
   .profile-img {
-    width: 180px;
-    height: 280px;
+    width: 160px;
+    height: 240px;
   }
 
   .about-me__btn,
@@ -567,6 +558,9 @@ footer {
   .skills-title,
   .project-title {
     transform: rotate(0deg);
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+
   }
 
   .about-me__wrapper {
@@ -574,17 +568,33 @@ footer {
     
   }
 
+  .about-me__intro h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
   .about-me__details {
     flex-direction: column;
-    width: 400px;
+    width: 95%;
+  }
+  .school {
+    margin-top: 0;
+  }
+
+  .about-me__info {
+    margin-top: 8px;
+    margin-bottom: 0;
   }
 
   .whatami {
     max-width: 300px;
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem;
   }
 
   .about-me__desc {
-    width: 350px;
+    width: 90%;
+    margin-top: 1.2rem;
   }
 
   .skills-intro,
@@ -596,11 +606,20 @@ footer {
     width: 400px;
   }
 
+  .skills-intro {
+    width: 90%;
+  }
+
   .skills-icons {
-    width: 325px;
+    width: 90%;
     flex-wrap: wrap;
     flex-grow: 1;
     gap: 5px;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    padding: 10px;
   }
 
   .project-intro {
@@ -615,6 +634,7 @@ footer {
 
   .project {
     padding: 5px;
+    margin-bottom: 4rem;
   }
 
   .projects img {
@@ -629,10 +649,22 @@ footer {
     clip-path: none;
   }
 
+  #section5, #section4, #section3, #section2 {
+    height: auto;
+    margin-top: 12rem;
+    border-top: 5px solid #0b0d08;
+    padding-top: 10rem;
+  }
+
+  #section2 {
+    margin-top: 0;
+  }
+
   .contact-intro,
     .form-container {
     padding: 20px;
-    width: 400px;
+    width: 90%;
+    margin-bottom: 3rem;
 }
 
   .about-me__wrapper {
@@ -665,3 +697,4 @@ footer {
     letter-spacing: .08rem;
   }
 }
+
