@@ -1,0 +1,3 @@
+[build]
+  publish = "public" # This is the directory Netlify will deploy as your site
+  functions = "netlify/functions" # This tells Netlify where your serverless functions are located
